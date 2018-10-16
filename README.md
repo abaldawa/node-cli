@@ -21,9 +21,9 @@ The output will be as below:
 #### The cli utility code is written in latest ES 2017 syntax completely with async/await and latest node.js version (10.12) is used. Also, code is completely documented along with design/pattern decision description and method usage documentation
 
 # Folder structure
-Every organization/dev team will require a range of CLI utility. They might also share some common code (ex. logging, utility etc.). Keeping this in mind I have created below modular directory structure:
+Every organization/dev team will require a range of CLI utilities. They might also share some common code (ex. logging, utility etc.). Keeping this in mind I have created below modular directory structure:
 
-1. cli-utilitys folder will have one folder per cli utility (in this case its just hackernews so just one folder exists) and all of the utility code should end up in that folder. <br/>
+1. cli-utilities folder will have one folder per cli utility (in this case its just hackernews so just one folder exists) and all of the utility code should end up in that folder. <br/>
 
 2. common folder have modules which are required/shared by many (or all) cli utilities. In this case 'utils' and 'logger' modules.<br/>
 
