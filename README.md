@@ -21,7 +21,7 @@ The output will be as below:
 #### The cli utility code is written in latest ES 2017 syntax completely with async/await and latest node.js version (10.12) is used. Also, code is completely documented along with design/pattern decision description and method usage documentation
 
 # Folder structure
-Evety organization/dev team will require a range of CLI utility. They might also share some common code (ex. logging, utility etc.). Keeping this in mind I have created below directory structure:
+Every organization/dev team will require a range of CLI utility. They might also share some common code (ex. logging, utility etc.). Keeping this in mind I have created below modular directory structure:
 
 1. cli-utilitys folder will have one folder per cli utility (in this case its just hackernews so just one folder exists) and all of the utility code should end up in that folder. <br/>
 
@@ -33,7 +33,9 @@ Evety organization/dev team will require a range of CLI utility. They might also
     3. scrapper -> It contains module which will scrape top "n" posts from hacker news server and will print its metadata on the terminal
     
 
-Thus the "node-cli" is very extinsible and can be extended with more cli utilities by just creating new utility folder inside "cli-utilities" folder, adding utility specific code inside it and adding an entry in package.json "bin" key so that it can be called from the terminal.
+Thus the "node-cli" is very extinsible and can be extended with more cli utilities by just creating new utility folder inside "cli-utilities" folder, adding utility specific code inside it and adding an entry in package.json "bin" key so that it can be called from the terminal. 
+
+Also, this level of mdularity ensures that the code can be tested easily.  
 
 # npm modules used
 1. "commander"
